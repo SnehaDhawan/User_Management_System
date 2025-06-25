@@ -1,9 +1,9 @@
-package Model;
-
+package com.example.User_Management_System.Model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,7 +15,6 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
 
-
     @Column(name ="first_Name")
     private String firstName;
 
@@ -24,7 +23,6 @@ public class Employee {
 
     @Column(name ="email_Id")
     private String emailId;
-
 
 
 }
